@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_layout_MainAct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="varol.publictransport.ui.home.MainActivity"
+    >
+
+  <com.google.android.gms.maps.MapView
+      android:id="@+id/mapView_ActMain"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorAccent"
+
+      />
+
+  <ImageView
+      android:id="@+id/iv_settings_MainAct"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/marginSmallest"
+      app:layout_anchor="@+id/mapView_ActMain"
+      app:layout_anchorGravity="right|top"
+      app:srcCompat="@drawable/ic_settings"
+      />
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/cv_myLocation_MainAct"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginEnd="@dimen/marginNormal"
+      app:cardCornerRadius="4dp"
+      app:layout_anchor="@+id/rl_bottomSheet_ActMain"
+      app:layout_anchorGravity="right|top"
+      >
+    <ImageView
+        android:id="@+id/iv_locationIcon_MainAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginSmall"
+        app:srcCompat="@drawable/ic_gps_not_fixed"
+        />
+
+  </android.support.v7.widget.CardView>
+
+
+  <RelativeLayout
+      android:id="@+id/rl_bottomSheet_ActMain"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:clipToPadding="true"
+      app:behavior_hideable="false"
+      app:behavior_peekHeight="300dp"
+      app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+      >
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_bottomSheetHolder_ActMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+
+        >
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/cv_allRoutes_MainAct"
+          android:layout_width="@dimen/sizingBig"
+          android:layout_height="@dimen/sizingBigger"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="20dp"
+          app:cardBackgroundColor="@color/colorPrimary"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+          <ImageView
+              android:id="@+id/iv_allRoutes_MainAct"
+              android:layout_width="@dimen/sizingSmall"
+              android:layout_height="@dimen/sizingSmall"
+              android:layout_margin="@dimen/marginTiny"
+              app:srcCompat="@drawable/ic_directions"
+              />
+
+          <TextView
+              android:id="@+id/tv_allRoutes_MainAct"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentStart="true"
+              android:layout_margin="@dimen/marginTiny"
+              android:maxLines="2"
+              android:text="@string/all_routes"
+              android:textColor="@android:color/white"
+              android:textSize="@dimen/textSizeBig"
+              android:textStyle="bold"
+              />
+
+        </RelativeLayout>
+
+
+      </android.support.v7.widget.CardView>
+
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rv_travelModes_MainAct"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="8dp"
+          android:layout_marginStart="8dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/cv_allRoutes_MainAct"
+          app:layout_constraintTop_toTopOf="@+id/cv_allRoutes_MainAct"
+          >
+
+      </android.support.v7.widget.RecyclerView>
+
+
+      <RelativeLayout
+          android:id="@+id/rl_searchBar_MainAct"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/marginBig"
+
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/rv_travelModes_MainAct"
+          >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/where_do_you_wanna_go"
+            android:padding="@dimen/marginSmall"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/bg_where_to_go_button"
+            />
+      </RelativeLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_dragBottomSheet_ActMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/shape_horizontal_bar"
+
+        />
+
+
+  </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

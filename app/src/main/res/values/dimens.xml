@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="textSizeSmall">10sp</dimen>
+  <dimen name="textSizeNormal">12sp</dimen>
+  <dimen name="textSizeBig">14sp</dimen>
+  <dimen name="textSizeBigger">16sp</dimen>
+  <dimen name="textSizeBiggest">18sp</dimen>
+
+  <dimen name="marginTiny">2dp</dimen>
+  <dimen name="marginSmallest">4dp</dimen>
+  <dimen name="marginSmaller">6dp</dimen>
+  <dimen name="marginSmall">8dp</dimen>
+  <dimen name="marginNormal">10dp</dimen>
+  <dimen name="marginBig">12dp</dimen>
+  <dimen name="marginBigger">14dp</dimen>
+  <dimen name="marginBiggest">16dp</dimen>
+  <dimen name="marginHuge">20dp</dimen>
+
+
+  <dimen name="sizingTiny">5dp</dimen>
+  <dimen name="sizingSmallest">10dp</dimen>
+  <dimen name="sizingSmaller">15dp</dimen>
+  <dimen name="sizingSmall">20dp</dimen>
+  <dimen name="sizingNormal">30dp</dimen>
+  <dimen name="sizingBig">50dp</dimen>
+  <dimen name="sizingBigger">60dp</dimen>
+  <dimen name="sizingBiggest">80dp</dimen>
+  <dimen name="sizingHuge">100dp</dimen>
+
+  <dimen name="bsLayoutHeight">250dp</dimen>
+  <dimen name="bsPeakHeight">60dp</dimen>
+
+  <dimen name="radiusSearchButton">7dp</dimen>
+
+</resources>

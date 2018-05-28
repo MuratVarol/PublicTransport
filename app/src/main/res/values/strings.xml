@@ -1,0 +1,31 @@
+<resources>
+  <string name="app_name">PublicTransport</string>
+  <string name="google_android_map_api_key">AIzaSyAfOwPEFvF3Sh1R8M-TCjZ5GUrdbDpr7ro</string>
+
+  <!--#A-->
+  <string name="all_routes">All Routes</string>
+
+  <!--#B-->
+  <string name="button_allow">Allow</string>
+  <string name="button_deny">Deny</string>
+
+  <!--#E-->
+  <string name="enable_gps_snack_text">Please enable GPS</string>
+  <string name="enable_gps_snack_action_text">Enable GPS</string>
+
+  <!--$G-->
+  <string name="give_location_permission">You need to give location permission to find location</string>
+
+
+  <!--#N-->
+  <string name="no_available_route">No available route for current criteria</string>
+
+  <!--#S-->
+  <string name="stop">Stop</string>
+
+  <!--#W-->
+  <string name="where_do_you_wanna_go">Where do you want to go?</string>
+  <string name="will_be_available_soon">Will be available soon</string>
+
+
+</resources>
